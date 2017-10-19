@@ -7,7 +7,7 @@
     <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -19,9 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".gson.AQI" />
-        <activity android:name=".gson.Basic" />
-        <activity android:name=".gson.Forecast" />
         <activity android:name=".WeatherActivity" />
 
         <service
