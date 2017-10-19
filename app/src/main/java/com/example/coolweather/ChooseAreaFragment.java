@@ -108,8 +108,7 @@ public class ChooseAreaFragment extends Fragment {
                 } else if (currentLevel == LEVEL_CITY) {
                     selectedCity = cityList.get(position);
                     queryCounties();
-                }
-                else if (currentLevel == LEVEL_COUNTY) {
+                } else if (currentLevel == LEVEL_COUNTY) {
                     String weatherId = countyList.get(position).getWeatherId();
                     if (getActivity() instanceof MainActivity) {
                         Intent intent = new Intent(getActivity(), WeatherActivity.class);
@@ -209,7 +208,7 @@ public class ChooseAreaFragment extends Fragment {
      */
     private void queryFromServer(String address, final String type) {
         showProgressDialog();
-        Log.d(TAG, "queryFromServer: 11111111111111111111"+type);
+        Log.d(TAG, "queryFromServer: 11111111111111111111" + type);
         HttpUtil.sendOkHttpRequest(address, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -228,7 +227,7 @@ public class ChooseAreaFragment extends Fragment {
                 Log.d(TAG, "queryFromServer: 33333333333333333");
                 String responseText = response.body().string();
                 boolean result = false;
-                Log.d(TAG, "onResponse: "+type);
+                Log.d(TAG, "onResponse: " + type);
                 if ("province".equals(type)) {
                     result = Utility.handleProvinceResponse(responseText);
                 } else if ("city".equals(type)) {
