@@ -22,7 +22,12 @@
         <activity android:name=".gson.AQI" />
         <activity android:name=".gson.Basic" />
         <activity android:name=".gson.Forecast" />
-        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".WeatherActivity" />
+
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
