@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".gson.AQI" />
+        <activity android:name=".gson.Basic" />
+        <activity android:name=".gson.Forecast" />
+        <activity android:name=".WeatherActivity"></activity>
     </application>
 
 </manifest>
